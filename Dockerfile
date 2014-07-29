@@ -1,4 +1,4 @@
-FROM ghc
+FROM gdoteof/ghc
 
 
 RUN apt-get update && apt-get install -y git zlib1g-dev libghc-unix-compat-dev 

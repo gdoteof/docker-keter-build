@@ -20,4 +20,5 @@ ENV LANG C.UTF-8
 
 RUN cabal install --only-dependencies .
 RUN cabal install .
-RUN cabal configure && cabal clean && cabal build
+RUN cabal clean && cabal configure 
+RUN cabal build

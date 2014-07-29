@@ -7,9 +7,6 @@ ENV HOME /root
 
 WORKDIR /root
 
-RUN mkdir -p .ssh
-RUN echo "Host github.com\n\tStrictHostKeyChecking no\n" >> /root/.ssh/config
-
 RUN git clone  https://github.com/snoyberg/keter.git
 
 RUN cd keter
